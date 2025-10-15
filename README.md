@@ -1,11 +1,11 @@
 # Minhas Cifras
 
-Um aplicativo web moderno para visualizar e gerenciar cifras de músicas, com suporte a transposição de tom e busca em tempo real.
+Um aplicativo web para visualizar e gerenciar cifras de músicas, com suporte a transposição de tom.
 
 ## Funcionalidades
 
 - 🎵 **Listagem Alfabética**: Todas as músicas são ordenadas automaticamente de A a Z
-- 🔍 **Busca em Tempo Real**: Filtre músicas rapidamente usando o campo de busca
+- 🔍 **Busca em Tempo Real**: Filtre músicas usando o campo de busca
 - 🎼 **Transposição de Tom**: Suba ou baixe o tom das cifras com um clique
 - 📱 **Design Responsivo**: Interface moderna que funciona em qualquer dispositivo
 - 🎨 **Interface Intuitiva**: Design limpo e profissional para melhor experiência
