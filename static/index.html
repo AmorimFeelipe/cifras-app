@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Cifras de Músicas</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">
+                    <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 18V5l12-2v13"></path>
+                        <circle cx="6" cy="18" r="3"></circle>
+                        <circle cx="18" cy="16" r="3"></circle>
+                    </svg>
+                    Minhas Cifras
+                </h1>
+                <p class="subtitle">Sua coleção pessoal de cifras</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="search-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" id="search-input" class="search-input" placeholder="Buscar música...">
+                </div>
+
+                <div class="songs-list-container">
+                    <div class="songs-header">
+                        <h2>Músicas</h2>
+                        <span id="songs-count" class="songs-count">0</span>
+                    </div>
+                    <ul id="songs-list" class="songs-list">
+                        <!-- Lista será preenchida dinamicamente -->
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Content Area -->
+            <main class="content">
+                <div id="welcome-screen" class="welcome-screen">
+                    <svg class="welcome-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 18V5l12-2v13"></path>
+                        <circle cx="6" cy="18" r="3"></circle>
+                        <circle cx="18" cy="16" r="3"></circle>
+                    </svg>
+                    <h2>Bem-vindo!</h2>
+                    <p>Selecione uma música da lista ao lado para começar</p>
+                </div>
+
+                <div id="song-display" class="song-display" style="display: none;">
+                    <div class="song-header">
+                        <div class="song-info">
+                            <h2 id="song-title" class="song-title">Título da Música</h2>
+                            <p id="song-artist" class="song-artist">Artista</p>
+                        </div>
+                        <div class="transpose-controls">
+                            <button id="transpose-down" class="transpose-btn" title="Baixar tom">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 19V5M5 12l7 7 7-7"/>
+                                </svg>
+                            </button>
+                            <span id="transpose-info" class="transpose-info">Tom Original</span>
+                            <button id="transpose-up" class="transpose-btn" title="Subir tom">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 5v14M5 12l7-7 7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="chord-sheet" class="chord-sheet">
+                        <!-- Cifra será renderizada aqui -->
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="/static/js/chordsheetjs.bundle.js"></script>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
+
